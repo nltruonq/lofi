@@ -80,6 +80,7 @@ function ControlSongs({ isStorm, isKeyboard }) {
     };
     return (
         <div className={cx('control')}>
+            <span>Ngyn Lm Trng</span>
             <img
                 src="https://app.lofi.co/static/media/previous.3b3474665d6b8d95bb081b41d67270fe.svg"
                 alt="previous"
