@@ -1,0 +1,44 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-default: #fff;
+    --color-primary: #f3a952;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+
+    overflow: hidden;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+//tooltip
+
+#tooltip-circle-btn > .tooltip-inner {
+    color: #fff;
+    font-weight: 500;
+    background-color: #00000080;
+    border-radius: 8px;
+    margin-top: 8px;
+    min-width: 120px;
+    padding: 4px 22px;
+    transition: all 0.2s ease-in-out;
+}

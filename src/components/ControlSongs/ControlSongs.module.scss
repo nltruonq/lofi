@@ -1,0 +1,42 @@
+.control {
+    display: flex;
+    gap: 16px;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.previous {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.3;
+    }
+}
+
+.play {
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.3;
+    }
+}
+
+.next {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.3;
+    }
+}
+
+.song {
+    display: none;
+}

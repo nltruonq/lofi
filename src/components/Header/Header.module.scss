@@ -1,0 +1,101 @@
+.wrapper {
+    width: 100%;
+    user-select: none;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 80px;
+    padding: 0 48px;
+
+    .image {
+        cursor: pointer;
+        height: 100px;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 46px;
+}
+
+.time {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px;
+    background: hsla(0, 0%, 100%, 0.15);
+    p {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #fff;
+    }
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    padding: 2px 6px;
+    border-radius: 16px;
+    background-color: var(--color-primary);
+    gap: 6px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.theme-icon {
+    width: 16.8px;
+    transition: all 0.3s linear;
+}
+
+.circle-toggle {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 35 11 / 20%);
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.w-32 {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.share {
+    &:hover {
+        opacity: 0.3;
+    }
+}
+
+.volume {
+    &:hover {
+        opacity: 0.3;
+    }
+}
+
+.fullscreen {
+    &:hover {
+        opacity: 0.3;
+    }
+}
+
+.menu {
+    &:hover {
+        opacity: 0.3;
+    }
+    height: 32px;
+}
+
+.menu-icon {
+}
+
+//animation
