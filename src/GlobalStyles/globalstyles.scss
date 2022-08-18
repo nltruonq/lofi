@@ -42,3 +42,16 @@ button {
     padding: 4px 22px;
     transition: all 0.2s ease-in-out;
 }
+
+@media only screen and (max-width: 500px) {
+    #vn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #date-header {
+        display: none;
+    }
+}
+

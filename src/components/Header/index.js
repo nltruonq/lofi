@@ -76,8 +76,8 @@ function Header({ handleTheme }) {
             </Link>
             <div className={cx('content')}>
                 <div className={cx('time')}>
-                    <p>
-                        {today.getHours()} : {today.getMinutes()} VN
+                    <p id="date-header">
+                        {today.getHours()} : {today.getMinutes()} <span id="vn">VN</span>
                     </p>
                 </div>
                 <button className={cx('theme-toggle')} onClick={handleToggleTheme} ref={btnRef}>

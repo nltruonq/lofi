@@ -17,7 +17,7 @@ function ThemeVideo({ themeDefault, isStorm }) {
     const dayStormRef = useRef();
     const nightRef = useRef();
     const nightStormRef = useRef();
-    
+
     if (!dayRef.current) {
     } else if (themeDefault && !isStorm) {
         dayRef.current.style.opacity = '1';
@@ -59,35 +59,16 @@ function ThemeVideo({ themeDefault, isStorm }) {
             >
                 <source src={themeVideo.dayTheme} type="video/mp4" />
             </video>
-            <video
-                autoPlay
-                muted
-                loop
-                preload="auto"
-                playsInline
-                className={cx('video-bg')}
-                style={{ opacity: 0 }}
-                ref={dayStormRef}
-            >
+            <video autoPlay muted loop playsInline className={cx('video-bg')} style={{ opacity: 0 }} ref={dayStormRef}>
                 <source src={themeVideo.dayStormTheme} type="video/mp4" />
             </video>
-            <video
-                autoPlay
-                muted
-                loop
-                preload="auto"
-                playsInline
-                className={cx('video-bg')}
-                style={{ opacity: 0 }}
-                ref={nightRef}
-            >
+            <video autoPlay muted loop playsInline className={cx('video-bg')} style={{ opacity: 0 }} ref={nightRef}>
                 <source src={themeVideo.nightTheme} type="video/mp4" />
             </video>
             <video
                 autoPlay
                 muted
                 loop
-                preload="auto"
                 playsInline
                 className={cx('video-bg')}
                 style={{ opacity: 0 }}
